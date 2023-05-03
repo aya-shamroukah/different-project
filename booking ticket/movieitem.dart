@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:health/projects/movie/item.dart';
+import 'package:health/projects/booking%20ticket/item.dart';
 
 class Now_Playing extends StatelessWidget {
   const Now_Playing({super.key});

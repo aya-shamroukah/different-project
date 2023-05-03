@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:health/projects/movie/item.dart';
-import 'package:health/projects/movie/movieitem.dart';
+import 'package:health/projects/booking%20ticket/movieitem.dart';
+
+import 'item.dart';
 
 
 
