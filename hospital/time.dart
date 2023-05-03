@@ -15,6 +15,7 @@ class time extends StatelessWidget {
     return Container( width: 100,height: 50,
     alignment: Alignment.center,
       decoration: BoxDecoration(
+         boxShadow: [ BoxShadow(offset: Offset(0,7),blurRadius: 3,color: Colors.black38.withOpacity(0.2))],
                 color:click3||click2 || click1?Color(0xff577CEF):Colors.white.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(15),
               border: Border.all(width: click3||click2 ||click1?1:0,color:click3||click2 || click1?Color(0xff577CEF):Color(0xff577CEF))),
@@ -37,6 +38,7 @@ class time2 extends StatelessWidget {
     return Container( width: 100,height: 50,
     alignment: Alignment.center,
       decoration: BoxDecoration(
+         boxShadow: [ BoxShadow(offset: Offset(0,7),blurRadius: 3,color: Colors.black38.withOpacity(0.2))],
                 color:click4||click5 || click6?Color(0xff577CEF):Colors.white.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(15),
               border: Border.all(width: click4||click5 ||click6?1:0,color:click4||click5 || click6?Color(0xff577CEF):Color(0xff577CEF))),

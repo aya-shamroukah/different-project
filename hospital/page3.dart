@@ -140,6 +140,7 @@ class _Page3State extends State<Page3> {
                       child: Container(
                         width: click?80:80,height:click?80:110 ,
                         decoration: BoxDecoration(
+                           boxShadow: [ BoxShadow(offset: Offset(0,9),blurRadius: 3,color: Colors.black38.withOpacity(0.2))],
                           color: click?Colors.white.withOpacity(0.5):Color(0xff577CEF),
                           borderRadius: BorderRadius.circular(15),
                         border: Border.all(width: click?1:0,color: click?Colors.black.withOpacity(0.5):Colors.white24)),
@@ -210,7 +211,7 @@ class _Page3State extends State<Page3> {
                       click4=!click4;
                       });
                       },
-                    child: time2(click4: click4,text: '12:30 PM', click5: click4,click6: click4),
+                    child: time2(click4: click4,text: '12:00 PM', click5: click4,click6: click4),
                   ),
                    Padding(
                      padding: const EdgeInsets.all(8.0),
@@ -246,26 +247,38 @@ class _Page3State extends State<Page3> {
              child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              Container(
-                width: 242,height: 58,
-                decoration: BoxDecoration(color: Color(0xff577CEF),borderRadius: BorderRadius.circular(15)),
-                child:  Column(
-                  mainAxisAlignment:MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                            height: 5,width: 60,
-                            decoration: BoxDecoration(
-                              color: Color(0xffD9D9D9),
-                           borderRadius: BorderRadius.circular(15),
+              InkWell(
+                 onTap: (){
+                        Navigator.of(context).pushNamed('page4');
+                      },
+                child: Container(
+                  width: 250,height: 58,
+                  decoration: BoxDecoration(
+                    boxShadow: [ BoxShadow(offset: Offset(0,7),blurRadius: 3,color: Colors.black38.withOpacity(0.2))],
+
+                    color: Color(0xff577CEF),borderRadius: BorderRadius.circular(15)),
+                  child:  Column(
+                    mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                              height: 5,width: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0xffD9D9D9),
+                             borderRadius: BorderRadius.circular(15),
+                              ),
                             ),
-                          ),
-                          Text('Book Appointment')
-                  ],
+                            Text('Book Appointment')
+                    ],
+                  ),
                 ),
               ),SizedBox(width: 10,),
               Container(
                  width: 67,height: 60,
-                decoration: BoxDecoration(color: Color(0xff577CEF),borderRadius: BorderRadius.circular(15)),
+                decoration: BoxDecoration(
+                    boxShadow: [ BoxShadow(offset: Offset(0,7),blurRadius: 3,color: Colors.black38.withOpacity(0.2))],
+                  
+
+                  color: Color(0xff577CEF),borderRadius: BorderRadius.circular(15)),
                 child: Icon(Icons.email),
               )
              ],),
